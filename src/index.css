@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer components {
+  .active {
+    @apply bg-[#1ABC9C] text-white font-bold;
+  }
+} */
+
+body{
+  scroll-behavior: smooth
+}
+.active {
+  @apply bg-[#1ABC9C] text-white font-bold p-2 rounded-md;
+}
+.home {
+  @apply bg-transparent text-white font-bold;
+}
+.image:hover .plus{
+  opacity:0.9;
+
+}
