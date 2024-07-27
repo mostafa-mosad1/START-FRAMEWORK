@@ -3,22 +3,23 @@ import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 function Navbar() {
   let [open, setOpen] = useState(false);
-  let [heightNav, setHeightNav] = useState("15px");
+  let [heightNav, setHeightNav] = useState("p-[15px]");
 
   (function nav() {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
-        setHeightNav("2px");
+        setHeightNav("p-[2px]");
       } else {
-        setHeightNav("15px");
+        setHeightNav("p-[15px]");
       }
     });
   })();
 
   return (
-    <div
-      style={{ paddingBlock: heightNav }}
-      className={`w-full bg-[#2c3e50]  sticky top-0 left-0 z-[1000] duration-[1s]  `}
+    <div className=" w-full bg-[#2c3e50] ">
+      <div
+      // style={{ paddingBlock: heightNav }} //py-[${heightNav}
+      className={`container m-auto sticky top-0 left-0 z-[1000] duration-[1s] ${heightNav}   ] `}
     >
       <div className="md:flex items-center justify-between container py-5 md:px-10 px-7 ">
         <Link to="" className="font-bold text-3xl  text-white">
@@ -48,6 +49,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
+    </div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import Title from "../Title/Title";
 function Home() {
   return (
     <>
-      <div className=" bg-[#1ABC9C]">
+      <div className=" bg-[#1ABC9C] h-screen">
         <div className=" container">
           <img
             className=" block pt-20   size-1/4 m-auto"

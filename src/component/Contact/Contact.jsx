@@ -35,7 +35,7 @@ function Contact() {
         />
 
         <div className="m-auto w-[50%]">
-          <div className="flex flex-col mb-4 relative">
+          <div className="flex flex-col mt-8 mb-4 relative">
             <label
               className={`absolute ${
                 name ? "-top-6" : "top-4"
