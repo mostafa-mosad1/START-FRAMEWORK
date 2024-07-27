@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NavBar from "./component/NavBar/NavBar";
 import Footer from "./component/Footer/Footer";
 import Layout from "./component/Layout/Layout";
@@ -9,8 +9,7 @@ import About from "./component/About/About";
 import Portfolio from "./component/Portfolio/Portfolio";
 import Contact from "./component/Contact/Contact";
 
-
-let routers = createHashRouter([
+let routers = createBrowserRouter([
   {
     path: "",
     element: <Layout />,
@@ -26,7 +25,6 @@ let routers = createHashRouter([
 
 function App() {
   return <RouterProvider router={routers}> </RouterProvider>;
-  
 }
 
 export default App;
