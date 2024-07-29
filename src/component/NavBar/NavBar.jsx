@@ -16,10 +16,10 @@ function Navbar() {
   })();
 
   return (
-    <div className=" w-full bg-[#2c3e50] ">
+    <div className=" w-full bg-[#2c3e50] sticky top-0 left-0 z-[1000] ">
       <div
       // style={{ paddingBlock: heightNav }} //py-[${heightNav}
-      className={`container m-auto sticky top-0 left-0 z-[1000] duration-[1s] ${heightNav}   ] `}
+      className={`container m-auto  duration-[1s] ${heightNav}   ] `}
     >
       <div className="md:flex items-center justify-between container py-5 md:px-10 px-7 ">
         <Link to="" className="font-bold text-3xl  text-white">
